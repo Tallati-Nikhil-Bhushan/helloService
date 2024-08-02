@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootdocker
+  labels:
+    app: bootdocker
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bootdocker
+  template:
+    metadata:
+      labels:
+        app: bootdocker
+    spec:
+      containers:
+      - name: bootdocker
+        image: nikhilbhushan/bootdocker:latest
+        ports:
+        - containerPort: 8071
