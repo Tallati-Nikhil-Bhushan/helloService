@@ -2,8 +2,8 @@ spring:
   application:
     name: helloService
 
-server:
-  port: 5000
+#server:
+#  port: 5000
 
 #spring.datasource.username: root
 #spring.datasource.password: root
